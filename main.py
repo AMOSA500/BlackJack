@@ -73,7 +73,7 @@ def bank_deal():
   check = False
   while not check:
     price = int(input(f'Enter your deals within {price_list}: \n£'))
-    if price in price_list:
+    if price in price_list or price <= user_bank:
       check = True
       return price
     else:
